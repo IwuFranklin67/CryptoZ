@@ -56,7 +56,7 @@ body {
 
 .navLink:hover,
 .navLink:active {
-  color: #2752E7;
+  color: #2752e7;
 }
 
 .btn {
@@ -71,11 +71,11 @@ body {
 }
 
 .signInBtn:hover {
-  outline: 0.2rem solid #2752E7;
+  outline: 0.2rem solid #2752e7;
 }
 
 .getStartedBtn {
-  background-color: #2752E7;
+  background-color: #2752e7;
   color: #fff;
 }
 
@@ -85,5 +85,70 @@ body {
 
 .intro {
   height: 76rem;
-  background-image: ".";
+  background-color: #2752e7;
+  display: flex;
+  gap: 10rem;
+  padding: 10rem;
+}
+
+.introText {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.introText h1 {
+  font-size: 4.5em;
+  line-height: 125%;
+  letter-spacing: 0px;
+}
+
+.introText p {
+  font-size: 2rem;
+  line-height: 140%;
+}
+
+.emailForm {
+  display: flex;
+}
+
+.emailForm input {
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 38rem;
+  margin-right: 1rem;
+  font-size: 1.8rem;
+  border: none;
+}
+
+.emailForm button {
+  font-size: 1.5rem;
+}
+
+.introForm {
+  height: 45rem;
+  width: 100rem;
+  padding: 4rem;
+  background-color: grey;
+  opacity: 80%;
+  border-radius: 2rem;
+  filter: blur(400);
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.introForm h3 {
+  font-weight: 600;
+  font-size: 2.4rem;
+  color: #fff;
+  line-height: 140%;
+  margin-bottom: 2rem;
+}
+
+.introForm .amount {
+  font-size: 1.2rem;
+  color: #fff;
 }
