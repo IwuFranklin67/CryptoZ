@@ -17,7 +17,7 @@
     href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet" />
 
-    <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css" />
 
 </head>
 
@@ -33,7 +33,7 @@
           <a href="#" class="navLink">Support</a>
         </div>
         <div class="navBtns">
-          <a href="#"><button type="button"  class="signInBtn btn">Sign In</button></a>
+          <a href="#"><button type="button" class="signInBtn btn">Sign In</button></a>
           <a href="#"><button type="button" class="getStartedBtn btn">Get Started</button></a>
         </div>
       </nav>
@@ -52,37 +52,25 @@
         <form class="introForm">
           <h3>Currency Converter</h3>
           <label class="amount" for="amount">Amount</label>
-          <br />
-          <span><img href="#" alt="currency image" /></span>
-          <span>GBP</span> |
           <input type="number" id="amount" name="amount" placeholder="1..." />
 
-          <br />
+          <label class="converted" for="converted">From</label>
+          <input type="number" id="converted" name="amount" placeholder="USD" />
 
-          <label for="converted">Converted to</label>
-          <br />
-          <span><img href="#" alt="currency image" /></span>
-          <span>AUD</span> |
-          <input type="number" id="converted" name="amount" placeholder="1" disabled />
-
-          <br />
-
-          <label for="date">Date</label>
-          <br />
-          <input type="date" id="date" name="date" placeholder="01 jan 2024" />
-
-          <p>EUR GBP BTC</p>
+          <label class="converted" for="converted">To</label>
+          <input type="number" id="converted" name="amount" placeholder="USD" />
+          <button type="submit" class="btn getStartedBtn">Convert</button>
         </form>
       </div>
     </header>
 
     <main class="main">
       <section class="clients">
-        <img src="" alt="binance" />
-        <img src="" alt="coinbase" />
-        <img src="" alt="bitcoin" />
-        <img src="" alt="tether" />
-        <img src="" alt="bitmex" />
+        <img src="./asset/clients/binance logo.png" alt="binance" />
+        <img src="./asset/clients/coinbase.png" alt="coinbase" />
+        <img src="./asset/clients/bitcoin.png" alt="bitcoin" />
+        <img src="./asset/clients/tether.png" alt="tether" />
+        <img src="./asset/clients/bitmex.png" alt="bitmex" />
       </section>
 
       <section class="metrics">
@@ -123,8 +111,10 @@
           </div>
         </div>
 
-        <img src="" alt="feature phone" class="featureImg" />
+        <img src="./asset/featureimg.png" alt="feature phone" class="featureImg" />
       </section>
+    </main>
+
 
       <section class="portfolio">
         <div class="portfolioCards">
@@ -186,7 +176,6 @@
         <h3 class="ctaHeading">Take your first step into safe, secure crypto investing</h3>
         <button type="button" class="btn ctaBtn">Get started</button>
       </section>
-    </main>
 
     <footer class="footer">
       <div class="footerTop">
