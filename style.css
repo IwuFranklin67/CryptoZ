@@ -86,10 +86,29 @@ body {
 
 .intro {
   height: 76rem;
+  background-image: linear-gradient(to right, #2752e7 0%, #0b2271 100%);
   background-color: #2752e7;
   display: flex;
   gap: 10rem;
   padding: 10rem;
+
+  position: relative;
+}
+
+.introBtcImg {
+  z-index: 1;
+
+  position: absolute;
+  top: 6rem;
+  left: 110rem;
+}
+
+.introEthImg {
+  z-index: 3;
+  
+  position: absolute;
+  left: 63rem;
+  bottom: 2rem;
 }
 
 .introText {
@@ -131,7 +150,7 @@ body {
   height: 60rem;
   width: 100rem;
   padding: 4rem;
-  background-color: grey;
+  background-color: #6b7da8e6;
   opacity: 80%;
   border-radius: 2rem;
   filter: blur(400);
@@ -139,6 +158,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+
+  z-index: 2;
 }
 
 .introForm h3 {
@@ -481,4 +502,141 @@ body {
 .itemText {
   font-size: 1.6rem;
   line-height: 185%;
+}
+
+.cta {
+  padding: 0 12rem;
+  margin-bottom: 10rem;
+}
+
+.ctaContainer {
+  background-image:
+    radial-gradient(
+      circle at top left,
+      #406eec 0%,
+      #406eec 13%,
+      transparent 13.1%
+    ),
+    radial-gradient(
+      circle at bottom,
+      #2752e7 24%,
+      #d0dbff 25%,
+      transparent 10%
+    ),
+    radial-gradient(circle at bottom, #2752e7 0%, #2752e7 15%, transparent 9%),
+    radial-gradient(
+      circle at bottom right,
+      #4b82ef 0%,
+      #4b82ef 45%,
+      transparent 40.1%
+    );
+
+  background-color: #2752e7;
+  padding: 8rem 10rem;
+  border-radius: 2rem;
+
+  position: relative;
+}
+
+.btcImage {
+  z-index: 999;
+
+  position: absolute;
+  bottom: 20rem;
+  left: 65rem;
+}
+
+.ethImage {
+  z-index: 999;
+
+  position: absolute;
+  bottom: 5rem;
+  left: 90rem;
+}
+
+.lunImage {
+  z-index: 999;
+
+  position: absolute;
+  left: 74rem;
+  bottom: 2rem;
+}
+
+.ctaHeading {
+  color: #fff;
+  font-size: 4rem;
+  line-height: 130%;
+  letter-spacing: 0px;
+  margin-bottom: 2rem;
+}
+
+.ctaBtn {
+  background-color: #fff;
+}
+
+.ctaBtn:hover {
+  background-color: #d3d3d3;
+}
+
+.footer {
+  padding: 0 10rem;
+}
+
+.footerContainer {
+  background-color: #2752e7;
+  padding: 6rem;
+  border-radius: 2rem;
+}
+
+.footerTop {
+  display: flex;
+  gap: auto;
+  justify-content: space-between;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+.footerTabs {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footerTabs h5 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 2.4rem;
+}
+
+.footerTabs a {
+  text-decoration: none;
+}
+
+.footerTabs a:link,
+.footerTabs a:visited {
+  color: #d3d3d3;
+}
+
+.footerTabs a:hover,
+.footerTabs a:active {
+  color: #fff;
+}
+
+.footerDown {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footerDown p {
+  color: #fff;
+  font-size: 2.6rem;
+}
+
+.footerDown p:last-child {
+  color: #d3d3d3;
+  font-size: 2rem;
 }
