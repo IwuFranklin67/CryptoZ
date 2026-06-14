@@ -23,21 +23,21 @@
 
 <body>
   <div class="container">
-    <header class="header">
-      <nav class="nav">
-        <div class="logo"><a href="#"><img alt="logo" src="./asset/logo.png" /></a></div>
-        <div class="navLinks">
-          <a href="#" class="navLink">Products</a>
-          <a href="#" class="navLink">Price</a>
-          <a href="#" class="navLink">Learn</a>
-          <a href="#" class="navLink">Support</a>
-        </div>
-        <div class="navBtns">
-          <a href="#"><button type="button" class="signInBtn btn">Sign In</button></a>
-          <a href="#"><button type="button" class="getStartedBtn btn">Get Started</button></a>
-        </div>
-      </nav>
+    <nav class="nav">
+      <div class="logo"><a href="#"><img alt="logo" src="./asset/logo.png" /></a></div>
+      <div class="navLinks">
+        <a href="#" class="navLink">Products</a>
+        <a href="#" class="navLink">Price</a>
+        <a href="#" class="navLink">Learn</a>
+        <a href="#" class="navLink">Support</a>
+      </div>
+      <div class="navBtns">
+        <a href="#"><button type="button" class="signInBtn btn">Sign In</button></a>
+        <a href="#"><button type="button" class="getStartedBtn btn">Get Started</button></a>
+      </div>
+    </nav>
 
+    <header class="header">
       <div class="intro">
         <div class="introText">
           <h1>Your all-in-one platform to buy, sell, trade, and earn Cryptocurrencies</h1>
@@ -68,13 +68,15 @@
     </header>
 
     <main class="main">
-      <section class="clients">
-        <img src="./asset/clients/binance logo.png" alt="binance" />
-        <img src="./asset/clients/coinbase.png" alt="coinbase" />
-        <img src="./asset/clients/bitcoin.png" alt="bitcoin" />
-        <img src="./asset/clients/tether.png" alt="tether" />
-        <img src="./asset/clients/bitmex.png" alt="bitmex" />
-      </section>
+      <div class="clientsContainer">
+        <section class="clients">
+          <img src="./asset/clients/binance logo.png" alt="binance" />
+          <img src="./asset/clients/coinbase.png" alt="coinbase" />
+          <img src="./asset/clients/bitcoin.png" alt="bitcoin" />
+          <img src="./asset/clients/tether.png" alt="tether" />
+          <img src="./asset/clients/bitmex.png" alt="bitmex" />
+        </section>
+      </div>
 
       <section class="metrics">
         <div class="metric">
@@ -122,16 +124,19 @@
     <section class="portfolio">
       <div class="portfolioCards">
         <div class="portfolioCard">
-          <img src="./asset/portfolio/portfolio1.png" alt="create portfolio image" />
+          <div class="portfolioImgContainer">
+            <img src="./asset/portfolio/portfolio1.png" alt="create portfolio image" />
+          </div>
           <div>
-            <h3>Create portfolio today</h3>
+            <h3 class="h3MarginTop">Create portfolio today</h3>
             <p>Buy and sell popular digital currencies, keep track of them in the one place. Has a variety of features
               that
               make it the best place to start trading</p>
           </div>
         </div>
         <div class="portfolioCard">
-          <img src="./asset/portfolio/portfolio2.png" alt="crypto trading image" />
+          <div class="portfolioImgContainer"><img src="./asset/portfolio/portfolio2.png" alt="crypto trading image" />
+          </div>
           <div>
             <h3>Ligthning-Fast Crypto Trading</h3>
             <p>The Exchange supports USD, EUR, and GBP. Invest in cryptocurrency slowly over time by scheduling buys
@@ -139,7 +144,9 @@
           </div>
         </div>
         <div class="portfolioCard">
-          <img src="./asset/portfolio/portfolio3.png" alt="security image" />
+          <div class="portfolioImgContainer">
+            <img src="./asset/portfolio/portfolio3.png" alt="security image" />
+          </div>
           <div>
             <h3>Security From Day One </h3>
             <p>Safety, security and companliance. Buy and sell popular digital currencies, keep track of them in the one
