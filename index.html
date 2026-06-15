@@ -9,7 +9,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="../asset/favicon/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="../asset/favicon/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="../asset/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="/site.webmanifest" />
+  <!-- <link rel="manifest" href="/site.webmanifest" /> -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,6 +18,8 @@
     rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
+
+  <script src="./script.js" defer></script>
 
 </head>
 
@@ -51,15 +53,18 @@
 
         <form class="introForm">
           <h3>Currency Converter</h3>
-          <label class="amount" for="amount">Amount</label>
+          <label for="amount">Amount</label>
           <input type="number" id="amount" name="amount" placeholder="1..." />
 
-          <label class="converted" for="converted">From</label>
-          <input type="number" id="converted" name="amount" placeholder="USD" />
+          <label for="from">From</label>
+          <input type="text" id="from" name="amount" placeholder="USD" />
 
-          <label class="converted" for="converted">To</label>
-          <input type="number" id="converted" name="amount" placeholder="USD" />
+          <label for="to">To</label>
+          <input type="text" id="to" name="amount" placeholder="USD" />
+
           <button type="submit" class="btn getStartedBtn">Convert</button>
+
+          <p class="resultDisplay" id="resultDisplay">Waiting for conversion...</p>
         </form>
 
         <img src="./asset/Coin/BitCoin/cam2.png" alt="BTC Image" class="introBtcImg" />
