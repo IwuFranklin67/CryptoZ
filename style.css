@@ -482,6 +482,10 @@ body {
   gap: 2rem;
 }
 
+.getStartedCard a {
+  text-decoration: none;
+}
+
 .getStartedCardText {
   text-align: center;
   background-color: #fff;
