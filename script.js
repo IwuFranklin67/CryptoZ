@@ -35,6 +35,25 @@ async function convert(base, quote, amount) {
   }
 }
 
-convert("USD", "EUR", amountInput)
+convert("USD", "EUR", 100)
   .then((result) => (resultDisplay.textContent = result))
   .catch((err) => console.error(err));
+
+async function getCurrencyCodes() {
+  try {
+    const response = await fetch(`${api}/v2/currencies`);
+
+    if (!response.ok) throw new Error("Failed to fetch currencies");
+
+    const data = await response.json();
+
+    const {iso_code} = data[0]
+
+    console.log(iso_code)
+  } catch (error) {
+    console.log("Error fetching currency codes:", error);
+    return [];
+  }
+}
+
+getCurrencyCodes();
